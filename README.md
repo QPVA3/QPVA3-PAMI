@@ -20,20 +20,50 @@ This paper introduces the QPVA³ framework, a novel approach to Video Question-A
 
 ```
 QPVA3/
-├── assets/                # Configuration templates & resources
-│   └── image/             #    Example configs for models & datasets
-├── framework/             #
-│   ├── xxx/               #
-│   └── xxx/               #
-├── benchmark/             #
-│   ├── dataset/           #
-│   └── processor/         #
-├── inference.py           # 
-├── train.py               # 
-└── requirements.txt       # Python package dependencies 
+├── assets/                   
+│   └── image/                
+├── lmm_eval/                 
+│   ├── lmms_eval/
+│   |   ├── models
+│   |   |  ├── chat           # new chat api, recommended
+│   |   |  |   ├── qpva3.py   # our QPVA3 model
+|   |   |  |   └── ...
+│   |   |  ├── simple
+│   |   |  |   ├── qpva3.py   # the old simple api model, depreciated
+|   |   |  |   └── ...        # our QPVA3 model
+|   |   |  └── ...
+│   |   ├── tasks
+│   |   |  ├── agqa_decomp     # task for evaluating AGQA-Decomp
+│   |   |  ├── qpva3_bench     # task for evaluating QPVA3Bench
+|   |   |  └── ...
+|   |   └── ...
+│   └── ...                 
+└── requirements.txt           # Python package dependencies 
 ```
 
 ## 🚀 Quick Start
+
+### 1. clone the repo
+``` bash
+git clone https://github.com/QPVA3/QPVA3-PAMI.git
+```
+install lmms-eval following：https://github.com/EvolvingLMMs-Lab/lmms-eval
+
+install the requirements via
+``` bash
+pip install -r requirements.txt
+```
+
+### 2. Train the models
+Download the train data from [AGQA-Decomp](https://agqa-decomp.cs.washington.edu/)
+
+Fintune the models with [llama-factory](https://github.com/hiyouga/LLaMA-Factory)
+
+### 3. Evaluate the models with lmms-eval
+Run your trained model with the following command to test the performance on AGQA-Decomp.
+```bash
+lmms_eval --model qpva3 --model_args.answerer_path Qwen/Qwen2.5-VL-7B-Instruct --model_args.max_pixels 12845056 --model_args.attn_implementation flash_attention_2 --model_args.interleave_visuals False --tasks agqa_decomp --batch_size 1 --cache_requests true --verbosity=DEBUG
+```
 
 ## 📊 Benchmark
 
