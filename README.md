@@ -18,6 +18,9 @@ This paper introduces the QPVA³ framework, a novel approach to Video Question-A
 
 ## 📁 Project Structure
 
+Our project is adapted from [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval)
+We modified the project and extended it to suit the infreence pipeline of QPVA3.
+
 ```
 QPVA3/
 ├── assets/                   
