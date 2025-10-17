@@ -25,12 +25,15 @@ QPVA3/
 ├── lmm_eval/                 
 │   ├── lmms_eval/
 │   |   ├── models
-│   |   |  ├── chat           # new chat api, recommended
-│   |   |  |   ├── qpva3.py   # our QPVA3 model
+│   |   |  ├── chat            # new chat api, recommended
+│   |   |  |   ├── qpva3.py    # our QPVA3 model
 |   |   |  |   └── ...
 │   |   |  ├── simple
-│   |   |  |   ├── qpva3.py   # the old simple api model, depreciated
-|   |   |  |   └── ...        # our QPVA3 model
+│   |   |  |   ├── qpva3.py    # the old simple api model, depreciated
+|   |   |  |   └── ...         # our QPVA3 model
+│   |   |  ├── model_utils
+│   |   |  |   ├── transformer_models   
+│   |   |  |     ├── qpva3     # the transformer vertion of QPVA3 model
 |   |   |  └── ...
 │   |   ├── tasks
 │   |   |  ├── agqa_decomp     # task for evaluating AGQA-Decomp
