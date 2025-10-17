@@ -39,6 +39,7 @@ QPVA3/
 
 ## 🎨 Visualization
 
+### Full Reasoning Case
 <div align="center">
   <img src="assets/img/visualization.png" alt="Sample Results Table 1" width="800">
 
@@ -53,6 +54,7 @@ Our framework exposes such potential failures in MLLMs; however, errors in spati
 Furthermore, since atomic questions form the basis for subsequent logical reasoning, errors at this initial stage are difficult for the reasoner to correct.
 In the future, as the perceptual capabilities of MLLMs improve, our framework is expected to deliver more accurate and robust reasoning ability for these models.
 
+### Conflict Reasoner Cases
 <div align="center">
   <img src="assets/img/corr.png" alt="Sample Results Table 2" width="800">
 
