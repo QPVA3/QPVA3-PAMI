@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[📁 Project Structure](#-project-structure) • [🚀 Quick Start](#-quick-start) • [📊 QPVA3 Bench](#-qpva3bench) • [🎨 Visualization](#-visualization)
+[📁 Project Structure](#-project-structure) • [🚀 Quick Start](#-quick-start) • [📊 QPVA3 Bench](#-qpva3-bench) • [🎨 Visualization](#-visualization)
 
 </div>
 
