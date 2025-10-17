@@ -25,20 +25,21 @@ QPVA3/
 ├── lmm_eval/                 
 │   ├── lmms_eval/
 │   |   ├── models
-│   |   |  ├── chat            # new chat api, recommended
-│   |   |  |   ├── qpva3.py    # our QPVA3 model
-|   |   |  |   └── ...
-│   |   |  ├── simple
-│   |   |  |   ├── qpva3.py    # the old simple api model, depreciated
-|   |   |  |   └── ...         # our QPVA3 model
-│   |   |  ├── model_utils
-│   |   |  |   ├── transformer_models   
-│   |   |  |     ├── qpva3     # the transformer vertion of QPVA3 model
-|   |   |  └── ...
+│   |   |   ├── chat            # new chat api, recommended
+│   |   |   |   ├── qpva3.py    # our QPVA3 model
+|   |   |   |   └── ...
+│   |   |   ├── simple          # the old simple api model, depreciated
+│   |   |   |   ├── qpva3.py    # our QPVA3 model
+|   |   |   |   └── ...         
+│   |   |   ├── model_utils
+│   |   |   |   ├── transformer_models   
+│   |   |   |   |  ├── qpva3.py # the transformer vertion of QPVA3 model
+|   |   |   |   |  └── ...
+|   |   |   |   └── ...
 │   |   ├── tasks
-│   |   |  ├── agqa_decomp     # task for evaluating AGQA-Decomp
-│   |   |  ├── qpva3_bench     # task for evaluating QPVA3Bench
-|   |   |  └── ...
+│   |   |   ├── agqa_decomp     # task for evaluating AGQA-Decomp
+│   |   |   ├── qpva3_bench     # task for evaluating QPVA3Bench
+|   |   |   └── ...
 |   |   └── ...
 │   └── ...                 
 └── requirements.txt           # Python package dependencies 
