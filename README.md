@@ -1,4 +1,4 @@
-<img width="864" height="429" alt="image" src="https://github.com/user-attachments/assets/c26e1675-fdfd-483d-bc26-53df6482738a" /># Parse, Align and Aggregate: Graph-driven Compositional Reasoning for Video Question Answering (QPVA $^3$)
+# Parse, Align and Aggregate: Graph-driven Compositional Reasoning for Video Question Answering (QPVA $^3$)
 
 <div align="center">
 
