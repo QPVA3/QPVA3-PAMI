@@ -24,7 +24,10 @@ We modified the project and extended it to suit the infreence pipeline of QPVA3.
 ```
 QPVA3/
 ├── assets/                   
-│   └── image/                
+│   └── image/
+├── QPVA3Bench/
+│   ├── visualization.py        # code to visualize our dataset
+│   └── QPVA3Bench.json         # our dataset files
 ├── lmm_eval/                 
 │   ├── lmms_eval/
 │   |   ├── models
@@ -72,7 +75,6 @@ Run your trained model with the following command to test the performance on AGQ
 lmms_eval --model qpva3 --model_args.answerer_path Qwen/Qwen2.5-VL-7B-Instruct --model_args.max_pixels 12845056 --model_args.attn_implementation flash_attention_2 --model_args.interleave_visuals False --tasks agqa_decomp --batch_size 1 --cache_requests true --verbosity=DEBUG
 ```
 
-## 📊 Benchmark
 
 ## 🎨 Visualization
 
