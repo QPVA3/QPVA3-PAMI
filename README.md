@@ -76,7 +76,7 @@ lmms_eval --model qpva3 --model_args.answerer_path Qwen/Qwen2.5-VL-7B-Instruct -
 ```
 
 ## 📊 QPVA $^3$?Bench
-The QPVA$3$Bench is stored under `QPVA3Bench` folder, in which the `QPVA3Bench.json` contains the dataset itself, while `visualization.py` provides a simple tool to visualize the  question structure of the dataset.
+The QPVA³Bench is stored under `QPVA3Bench` folder, in which the `QPVA3Bench.json` contains the dataset itself, while `visualization.py` provides a simple tool to visualize the  question structure of the dataset.
 
 `QPVA3Bench.json` contains a json dict, where the keys are identical question keys representing the video-question pair, and the values are a dictionary containing the following contents:
 
