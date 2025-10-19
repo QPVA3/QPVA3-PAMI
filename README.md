@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[📁 Project Structure](#-project-structure) • [🚀 Quick Start](#-quick-start) • [📊 Benchmark](#-benchmark) • [🎨 Visualization](#-visualization)
+[📁 Project Structure](#-project-structure) • [🚀 Quick Start](#-quick-start) • [📊 Benchmark](#-qpva-3bench) • [🎨 Visualization](#-visualization)
 
 </div>
 
@@ -75,6 +75,23 @@ Run your trained model with the following command to test the performance on AGQ
 lmms_eval --model qpva3 --model_args.answerer_path Qwen/Qwen2.5-VL-7B-Instruct --model_args.max_pixels 12845056 --model_args.attn_implementation flash_attention_2 --model_args.interleave_visuals False --tasks agqa_decomp --batch_size 1 --cache_requests true --verbosity=DEBUG
 ```
 
+## 📊 QPVA $^3$?Bench
+The QPVA$3$Bench is stored under `QPVA3Bench` folder, in which the `QPVA3Bench.json` contains the dataset itself, while `visualization.py` provides a simple tool to visualize the  question structure of the dataset.
+
+`QPVA3Bench.json` contains a json dict, where the keys are identical question keys representing the video-question pair, and the values are a dictionary containing the following contents:
+
+- `id`: the id of this sample. Named as `{dataset_name}#{id_in_dataset}`, can be used to find the source of origial video-question pair.
+- `video`: the path to video file. Named as `videos/{dataset_name}#{original_video_name_in_dataset}`, can be used to find the video corresponds to this video-question pair from the source dataset.
+- `main_questions`: the main question of this sample, also the root of question decomposition tree.
+- `main_answer`: the answer to the main question.
+- `decomposition`: the decomposition tree, which is a nested dictionary of the following key-value pairs:
+  - `question_id` the id of this quesition in the decomposition tree.
+  - `question`: the current question,
+  - `subquestions`: Optional, only exists when current question is not a leaf question. When exists, it is a list of nested dictionary with same structure, representing the decomposed questions of current question.
+- `answers`: the answers to each question in the decomposition tree. Stored as a dict where the keys are `question_id` and values are corresponding answers.
+
+The visualization scripe can be run by ```python visualization.py```. Input the index of the sample as  to visualize
+  
 
 ## 🎨 Visualization
 
