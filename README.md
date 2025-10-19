@@ -99,7 +99,7 @@ The visualization scripe can be run by ```python visualization.py```. Input the 
 <div align="center">
   <img src="assets/img/visualization.png" alt="Sample Results Table 1" width="800">
 
-*Qualitative example showcasing how QPVA $^3$ framework achieves successful successful in-depth analysis for VideoQA.*
+*Qualitative example showcasing how QPVA³ framework achieves successful successful in-depth analysis for VideoQA.*
 </div>
 
 * We first present an example that highlights compositional inconsistencies despite a correctly answered main question, demonstrating the capability of QPVA $^{3}$ to provide transparent analysis of MLLM outputs.
