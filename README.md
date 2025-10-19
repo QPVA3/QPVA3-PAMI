@@ -1,4 +1,4 @@
-# Parse, Align and Aggregate: Graph-driven Compositional Reasoning for Video Question Answering (QPVA $^3$)
+<img width="864" height="429" alt="image" src="https://github.com/user-attachments/assets/c26e1675-fdfd-483d-bc26-53df6482738a" /># Parse, Align and Aggregate: Graph-driven Compositional Reasoning for Video Question Answering (QPVA $^3$)
 
 <div align="center">
 
@@ -90,7 +90,10 @@ The QPVA³Bench is stored under `QPVA3Bench` folder, in which the `QPVA3Bench.js
   - `subquestions`: Optional, only exists when current question is not a leaf question. When exists, it is a list of nested dictionary with same structure, representing the decomposed questions of current question.
 - `answers`: the answers to each question in the decomposition tree. Stored as a dict where the keys are `question_id` and values are corresponding answers.
 
-The visualization scripe can be run by ```python visualization.py```. Input the index of the sample as  to visualize
+The visualization scripe can be run by ```python visualization.py```. Input the index of the sample to visualize it. An example is shown as below.
+<div align="center">
+  <img src="assets/img/dataset.png" alt="Dataset visualization" width="800">
+</div>
   
 
 ## 🎨 Visualization
