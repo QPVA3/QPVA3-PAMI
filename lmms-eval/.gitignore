@@ -1,0 +1,7 @@
+*.egg-info/
+.idea/
+.vscode/
+.cursor/
+.DS_Store
+*.pyc
+*/.cache/
